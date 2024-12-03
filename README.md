@@ -56,7 +56,10 @@
 
 ![image](https://github.com/user-attachments/assets/2511c466-9a14-4c3c-9b5a-5f4c8dcaf528)
 
-* создал веб страницу index.html (Hello, Kubernetes!)
+* создал веб страницу index.html (Hello, Kubernetes!) и configmap-nginx.yaml для конфигурации Nginx.
+* создал файл service.yaml для Service.
+
+![image](https://github.com/user-attachments/assets/58943829-592b-45a7-ad7b-fa85caf8f4aa)
 
 * Проверка
 
