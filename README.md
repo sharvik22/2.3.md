@@ -53,7 +53,6 @@
 ### Решение 1
 
 * Создать Deployment приложения, состоящего из контейнеров nginx и multitool.
-* Решить возникшую проблему с помощью ConfigMap (проблема в портах, как и в предедущем дз).
 
 ![image](https://github.com/user-attachments/assets/2511c466-9a14-4c3c-9b5a-5f4c8dcaf528)
 
@@ -65,10 +64,8 @@
 
 ![image](https://github.com/user-attachments/assets/a0efee5c-e3c6-4698-976a-25177e8e5bd9)
 
+![image](https://github.com/user-attachments/assets/a8bf355a-64f5-4393-9d4d-520d7a74ce1e)
 
-
-
- 
 
 
 ---
