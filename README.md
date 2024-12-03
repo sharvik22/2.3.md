@@ -52,6 +52,25 @@
 
 ### Решение 1
 
+* Создать Deployment приложения, состоящего из контейнеров nginx и multitool.
+* Решить возникшую проблему с помощью ConfigMap (проблема в портах, как и в предедущем дз).
+
+![image](https://github.com/user-attachments/assets/2511c466-9a14-4c3c-9b5a-5f4c8dcaf528)
+
+* создал веб страницу index.html (Hello, Kubernetes!)
+
+* Проверка
+
+![image](https://github.com/user-attachments/assets/9d23b542-606e-41c8-acbb-0b9cb481a7ca)
+
+![image](https://github.com/user-attachments/assets/a0efee5c-e3c6-4698-976a-25177e8e5bd9)
+
+
+
+
+ 
+
+
 ---
 
 ### Решение 2
