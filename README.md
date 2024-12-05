@@ -86,7 +86,38 @@
 
 ### Решение 2
 
+* Создал и применил манифест с nginx.
 
+![image](https://github.com/user-attachments/assets/87dd05b3-6b66-44f6-9dad-522c7a6770ad)
+
+* Создал web-страницу и подключил её как ConfigMap.
+
+![image](https://github.com/user-attachments/assets/501abaea-58a8-487b-b029-a6d40eb50212)
+
+* Выпустил самородписанные ssl сертификаты.
+
+## openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt -subj "/CN=nginx.example.com/O=nginx"
+
+* Создал secret для использования сертификатов.
+
+## kubectl create secret tls nginx-tls-secret --key tls.key --cert tls.crt -n dz8-2
+
+* Создал и применил манифест service.
+
+![image](https://github.com/user-attachments/assets/fff7d37b-d827-4619-a9c0-a042455bf4c2)
+
+* Срздал и пременил ingress.yaml (важно прописать в хостах и связать доменное имя с контроллером ingress).
+
+![image](https://github.com/user-attachments/assets/6c8f6d3b-4a8e-46a0-8bb0-4e645b5e37ee)
+
+
+* Проверка
+
+![image](https://github.com/user-attachments/assets/fee3e8a9-8e97-4db4-9e59-2f96e30be1a9)
+
+
+
+  
 
 
 
