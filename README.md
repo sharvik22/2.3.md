@@ -52,32 +52,6 @@
 
 ### Решение 1
 
-* Создать Deployment приложения, состоящего из контейнеров nginx и multitool.
-
-![image](https://github.com/user-attachments/assets/2511c466-9a14-4c3c-9b5a-5f4c8dcaf528)
-
-* создал веб страницу index.html (Hello, Kubernetes!) и configmap-nginx.yaml для конфигурации Nginx.
-* создал файл service.yaml для Service.
-
-![image](https://github.com/user-attachments/assets/58943829-592b-45a7-ad7b-fa85caf8f4aa)
-
-* Проверка
-
-![image](https://github.com/user-attachments/assets/9d23b542-606e-41c8-acbb-0b9cb481a7ca)
-
-![image](https://github.com/user-attachments/assets/a8bf355a-64f5-4393-9d4d-520d7a74ce1e)
-
-
-
----
-
-### Решение 2
-
----
-
-
-### Решение 1
-
 * Создал Deployment манифест, состоящего из контейнеров nginx и multitool. Применил его.
 
 Видно, что не запустился один из контейнеров.
@@ -102,6 +76,13 @@
 
 ![image](https://github.com/user-attachments/assets/52067ff9-eddc-445d-8ad5-66e9e28fc31d)
 
+
+
+---
+
+### Решение 2
+
+---
 
 
 
