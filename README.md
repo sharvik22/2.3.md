@@ -94,13 +94,13 @@
 
 ![image](https://github.com/user-attachments/assets/501abaea-58a8-487b-b029-a6d40eb50212)
 
-* Выпустил самородписанные ssl сертификаты.
+* Выпустил самородписанные ssl сертификаты c SANs:
 
-## openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt -subj "/CN=nginx.example.com/O=nginx"
+## openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt -subj "/CN=nginx-example.com/O=nginx-example.com" -addext "subjectAltName=DNS:nginx-example.com"
 
 * Создал secret для использования сертификатов.
 
-## kubectl create secret tls nginx-tls-secret --key tls.key --cert tls.crt -n dz8-2
+## kubectl create secret tls nginx-tls --key tls.key --cert tls.crt -n dz8
 
 * Создал и применил манифест service.
 
