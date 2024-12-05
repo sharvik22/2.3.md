@@ -78,12 +78,29 @@
 
 ### Решение 1
 
-* Создал Deployment приложения, состоящего из контейнеров nginx и multitool. Применил его.
-Видно, что не запустился один из контейнеров
+* Создал Deployment манифест, состоящего из контейнеров nginx и multitool. Применил его.
+
+Видно, что не запустился один из контейнеров.
 
 ![image](https://github.com/user-attachments/assets/2aebba95-4d49-4497-b274-6e820479693d)
 
+* Смотрю логи контейнеров
 
+![image](https://github.com/user-attachments/assets/dd972e01-1038-4bf6-bfd4-4c11f69867e2)
+
+![image](https://github.com/user-attachments/assets/d695cf4d-b4bf-41eb-a0da-f013b7bb1607)
+
+* Это контейнер  multitool, конфликт портов с nginx.
+
+![image](https://github.com/user-attachments/assets/3a6936df-b639-474f-883f-efe618721471)
+
+* Создаю и применяю манифест onfigmap-multitool.yaml для исправления ошибки.
+
+* Так же правлю Deployment манифест, чтобы он использовал configmap. Применяю манифесты.
+
+* Проверка
+
+![image](https://github.com/user-attachments/assets/52067ff9-eddc-445d-8ad5-66e9e28fc31d)
 
 
 
