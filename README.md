@@ -72,9 +72,10 @@
 
 * Так же правлю Deployment манифест, чтобы он использовал configmap. Применяю манифесты.
 
-* Проверка
+* Проверяю, что под запущен и два контейнера, так же работы service.
 
-![image](https://github.com/user-attachments/assets/52067ff9-eddc-445d-8ad5-66e9e28fc31d)
+![image](https://github.com/user-attachments/assets/e7392a01-4d57-459c-b4bc-7529ee5ce395)
+
 
 
 
