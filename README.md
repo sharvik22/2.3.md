@@ -88,11 +88,22 @@
 
 * Создал и применил манифест с nginx.
 
-![image](https://github.com/user-attachments/assets/87dd05b3-6b66-44f6-9dad-522c7a6770ad)
+![image](https://github.com/user-attachments/assets/3d1161ab-1ad6-4bee-b7b5-056e02875898)
 
 * Создал web-страницу и подключил её как ConfigMap.
 
-![image](https://github.com/user-attachments/assets/501abaea-58a8-487b-b029-a6d40eb50212)
+## index.html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Моя веб-страница</title>
+</head>
+<body>
+    <h1>Привет, мир!</h1>
+    <p>Это моя веб-страница, размещенная в Kubernetes.</p>
+</body>
+</html>
 
 * Выпустил самородписанные ssl сертификаты c SANs:
 
