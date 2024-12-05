@@ -82,11 +82,14 @@
 
 ![image](https://github.com/user-attachments/assets/dd9e7e02-d046-42d0-a10c-af4dc56acf93)
 
-
-
 ---
 
 ### Решение 2
+
+
+
+
+
 
 ---
 
