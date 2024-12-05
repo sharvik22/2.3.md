@@ -68,7 +68,7 @@
 
 ![image](https://github.com/user-attachments/assets/3a6936df-b639-474f-883f-efe618721471)
 
-* Создаю и применяю манифест onfigmap-multitool.yaml для исправления ошибки.
+* Создаю и применяю манифест configmap-multitool.yaml для исправления ошибки.
 
 * Так же правлю Deployment манифест, чтобы он использовал configmap. Применяю манифесты.
 
