@@ -52,7 +52,7 @@
 
 ### Решение 1
 
-* Создал Deployment манифест, состоящего из контейнеров nginx и multitool. Применил его.
+* Создал Deployment манифест, состоящего из контейнеров nginx и multitool. Применил его. https://github.com/sharvik22/2.3.md/blob/0bf8b07188fe3c9517519f7684f3ff1114409746/dz8-1/deployment.yaml
 
 Видно, что не запустился один из контейнеров.
 
