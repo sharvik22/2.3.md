@@ -62,11 +62,13 @@
 
 ![image](https://github.com/user-attachments/assets/dd972e01-1038-4bf6-bfd4-4c11f69867e2)
 
-![image](https://github.com/user-attachments/assets/d695cf4d-b4bf-41eb-a0da-f013b7bb1607)
+![image](https://github.com/user-attachments/assets/3a6936df-b639-474f-883f-efe618721471)
+
 
 * Это контейнер  multitool, конфликт портов с nginx.
 
-![image](https://github.com/user-attachments/assets/3a6936df-b639-474f-883f-efe618721471)
+![image](https://github.com/user-attachments/assets/d695cf4d-b4bf-41eb-a0da-f013b7bb1607)
+
 
 * Создаю и применяю манифест configmap-multitool.yaml для исправления ошибки.
 
