@@ -105,6 +105,12 @@
 </body>
 </html>
 
+
+* Создал ConfigMap из этого файла:
+
+## kubectl create configmap nginx-configmap --from-file=index.html
+
+
 * Выпустил самородписанные ssl сертификаты c SANs:
 
 ## openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt -subj "/CN=nginx-example.com/O=nginx-example.com" -addext "subjectAltName=DNS:nginx-example.com"
@@ -115,29 +121,16 @@
 
 * Создал и применил манифест service.
 
-![image](https://github.com/user-attachments/assets/fff7d37b-d827-4619-a9c0-a042455bf4c2)
+![image](https://github.com/user-attachments/assets/a24f0f87-7033-4971-8058-1351dbd7367f)
 
 * Срздал и пременил ingress.yaml (важно прописать в хостах и связать доменное имя с контроллером ingress).
-
-![image](https://github.com/user-attachments/assets/6c8f6d3b-4a8e-46a0-8bb0-4e645b5e37ee)
 
 
 * Проверка
 
-![image](https://github.com/user-attachments/assets/fee3e8a9-8e97-4db4-9e59-2f96e30be1a9)
+![image](https://github.com/user-attachments/assets/10235052-2350-48df-8aa9-7e83c02db468)
 
-![image](https://github.com/user-attachments/assets/6c84f18a-3349-416a-8f87-c36b8b439204)
-
-![image](https://github.com/user-attachments/assets/71895771-784b-4389-9838-c24a284d181d)
-
-![image](https://github.com/user-attachments/assets/fdb1bda8-4fad-4b8a-bf12-bbc8cdc71527)
-
-![image](https://github.com/user-attachments/assets/45d1ccd2-a3aa-4f19-b028-98829005aa98)
-
-
-  
-
-
+![image](https://github.com/user-attachments/assets/61f84084-2579-45ab-a1ba-8275d6cfe0ab)
 
 
 ---
