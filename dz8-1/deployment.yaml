@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-multitool-deployment
+  namespace: dz8
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-multitool
+  template:
+    metadata:
+      labels:
+        app: nginx-multitool
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: nginx-config
+          mountPath: /etc/nginx/conf.d
+        - name: nginx-html
+          mountPath: /usr/share/nginx/html
+      - name: multitool
+        image: wbitt/network-multitool
+        ports:
+        - containerPort: 8080
+        env:
+        - name: HTTP_PORT
+          valueFrom:
+            configMapKeyRef:
+              name: multitool-config
+              key: HTTP_PORT
+        - name: HTTPS_PORT
+          valueFrom:
+            configMapKeyRef:
+              name: multitool-config
+              key: HTTPS_PORT
+      volumes:
+      - name: nginx-config
+        configMap:
+          name: nginx-config
+          items:
+          - key: default.conf
+            path: default.conf
+      - name: nginx-html
+        configMap:
+          name: nginx-config
+          items:
+          - key: index.html
+            path: index.html
