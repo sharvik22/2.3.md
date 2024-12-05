@@ -76,6 +76,9 @@
 
 ![image](https://github.com/user-attachments/assets/e7392a01-4d57-459c-b4bc-7529ee5ce395)
 
+* Проверяю доступность страницы, вывод curl.
+
+![image](https://github.com/user-attachments/assets/dd9e7e02-d046-42d0-a10c-af4dc56acf93)
 
 
 
